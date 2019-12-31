@@ -1,0 +1,13 @@
+# eclipse
+*.classpath
+*.project
+.settings/
+target/
+# idea
+*.iml
+.idea/
+*.swp
+*.txt
+/bin/
+logs/
+*.class
