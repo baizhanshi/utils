@@ -17,5 +17,9 @@ public class TestEnum {
         System.out.println(EnumUtils.enumByValue(BusinessTypeEnum.class,"个险续保"));
         //根据特定值获取枚举值对象
         System.out.println(EnumUtils.enumByDesc(BusinessTypeEnum.class,"renewal"));
+        //获取所有的code值集合
+        System.out.println(EnumUtils.getCodeList(BusinessTypeEnum.class));
+        //获取所有的value值集合
+        System.out.println(EnumUtils.getValueList(BusinessTypeEnum.class));
     }
 }

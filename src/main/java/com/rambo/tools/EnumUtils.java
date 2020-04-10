@@ -1,8 +1,10 @@
 package com.rambo.tools;
 
+import com.google.common.collect.Lists;
 import lombok.NonNull;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -86,4 +88,35 @@ public final class EnumUtils {
         return enumMap;
     }
 
+    /**
+     * 返回所有枚举的key值集合
+     *
+     * @param clazz
+     * @return
+     */
+    public static <C, T extends BaseEnum<C, ?, ?>> List<C> getCodeList(@NonNull Class<T> clazz) {
+        List<C> codeList = Lists.newArrayList();
+        for (T _enum : clazz.getEnumConstants()) {
+            if (_enum.getCode() != null) {
+                codeList.add(_enum.getCode());
+            }
+        }
+        return codeList;
+    }
+
+    /**
+     * 返回所有枚举的value值集合
+     *
+     * @param clazz
+     * @return
+     */
+    public static <V, T extends BaseEnum<?, V, ?>> List<V> getValueList(@NonNull Class<T> clazz) {
+        List<V> valueList = Lists.newArrayList();
+        for (T _enum : clazz.getEnumConstants()) {
+            if (_enum.getValue() != null) {
+                valueList.add(_enum.getValue());
+            }
+        }
+        return valueList;
+    }
 }
