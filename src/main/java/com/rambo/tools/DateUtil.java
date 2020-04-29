@@ -4,6 +4,7 @@ import org.apache.commons.lang.time.DateFormatUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -125,7 +126,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取过去的天数
-     *
+     * <p>
      * param date
      * return
      */
@@ -136,7 +137,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取过去的小时
-     *
+     * <p>
      * param date
      * return
      */
@@ -147,7 +148,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取过去的分钟
-     *
+     * <p>
      * param date
      * return
      */
@@ -158,7 +159,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 转换为时间（天,时:分:秒.毫秒）
-     *
+     * <p>
      * param timeMillis
      * return
      */
@@ -173,7 +174,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取两个日期之间的天数
-     *
+     * <p>
      * param before
      * param after
      * return
@@ -186,7 +187,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 得到某年某周的第一天
-     *
+     * <p>
      * param year
      * param week
      * return
@@ -206,7 +207,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 得到某年某周的最后一天
-     *
+     * <p>
      * param year
      * param week
      * return
@@ -225,7 +226,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 取得当前日期所在周的第一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -239,7 +240,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 取得当前日期所在周的最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -253,7 +254,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 取得当前日期所在周的前一周最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -266,7 +267,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的月的第一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -320,7 +321,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年月的月的第一天
-     *
+     * <p>
      * param year
      * param month
      * return
@@ -339,7 +340,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的月的最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -354,7 +355,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年月的月的最后一天
-     *
+     * <p>
      * param year
      * param month
      * return
@@ -382,7 +383,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的上个月的最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -396,7 +397,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的季的第一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -409,7 +410,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年季的季的第一天
-     *
+     * <p>
      * param year
      * param quarter
      * return
@@ -433,7 +434,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回当前日期的季的最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -446,7 +447,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年季的季的最后一天
-     *
+     * <p>
      * param year
      * param quarter
      * return
@@ -470,7 +471,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回当前日期的季的第一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -483,7 +484,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的上一季的最后一天
-     *
+     * <p>
      * param date
      * return
      */
@@ -496,7 +497,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年季的上一季的最后一天
-     *
+     * <p>
      * param year
      * param quarter
      * return
@@ -520,7 +521,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定年季的上一季的第一天
-     *
+     * <p>
      * param year
      * param quarter
      * return
@@ -544,7 +545,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 返回指定日期的季度
-     *
+     * <p>
      * param date
      * return
      */
@@ -592,7 +593,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取某年某周的星期一
-     *
+     * <p>
      * param y
      * param w
      * return
@@ -609,7 +610,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
 
     /**
      * 获取某年某周的星期天
-     *
+     * <p>
      * param y
      * param w
      * return
@@ -655,7 +656,7 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
     }
 
     /**
-     * 获取时间差
+     * 获取时间格式化差
      *
      * @param startDate
      * @param endDate
@@ -682,6 +683,23 @@ public class DateUtil extends org.apache.commons.lang.time.DateUtils {
         result[2] = min;
         result[3] = sec;
         return result;
+    }
+
+    /**
+     * 获取今天23:59:59秒到当前时间的差值
+     *
+     * @return
+     */
+    private long getExpireTime() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 23,
+                59, 59);
+        //今天晚上23:59:59的时间戳
+        long lastDate = calendar.getTime().getTime() / 1000;
+        //当前时间的时间戳
+        Instant instant = Instant.now();
+        //获取时间差额
+        return lastDate - instant.getEpochSecond();
     }
 
 

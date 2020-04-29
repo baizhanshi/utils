@@ -20,5 +20,7 @@ public class ThreadPoolTest {
                 }
             });
         }
+
+        new Thread(()-> System.out.println("创建线程！")).start();
     }
 }

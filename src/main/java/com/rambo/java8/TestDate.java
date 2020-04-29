@@ -121,7 +121,7 @@ public class TestDate {
         System.out.println("instant----------------");
 
         Instant instant = Instant.now();
-        System.out.println("获取当前时间的时间戳：" + instant);//instant就是以前的date
+        System.out.println("获取当前时间的时间戳：" + instant.getEpochSecond());//instant就是以前的date
         //确定时区的时间
         ZoneId zoneId = ZoneId.systemDefault();
         LocalDate birthLocalDate = instant.atZone(zoneId).toLocalDate();
