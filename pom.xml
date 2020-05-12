@@ -81,8 +81,17 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.41</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>1.20</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>rambo-tool</finalName>
