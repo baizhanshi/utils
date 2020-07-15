@@ -1,7 +1,5 @@
 package com.rambo.enumTest;
 
-import com.rambo.tools.EnumUtils;
-
 /**
  * Created by baizhanshi on 2019/6/25.
  */

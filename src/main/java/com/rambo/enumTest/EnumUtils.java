@@ -1,6 +1,7 @@
-package com.rambo.tools;
+package com.rambo.enumTest;
 
 import com.google.common.collect.Lists;
+import com.rambo.enumTest.BaseEnum;
 import lombok.NonNull;
 
 import java.util.HashMap;

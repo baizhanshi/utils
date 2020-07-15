@@ -1,5 +1,5 @@
 
-package com.rambo.tools;
+package com.rambo.enumTest;
 
 /**
  * 枚举类的帮助类

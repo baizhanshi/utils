@@ -1,5 +1,6 @@
 package com.rambo.threadUtil;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -22,5 +23,18 @@ public class ThreadPoolTest {
         }
 
         new Thread(()-> System.out.println("创建线程！")).start();
+    }
+
+    class thread1 implements Callable{
+        /**
+         * Computes a result, or throws an exception if unable to do so.
+         *
+         * @return computed result
+         * @throws Exception if unable to compute a result
+         */
+        @Override
+        public Object call() throws Exception {
+            return null;
+        }
     }
 }

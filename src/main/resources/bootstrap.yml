@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name:
+  profiles:
+    active: ${DEPLOY_ENV}
+  redis:
+    host: r-tj771e0e18d56b24583.redis.rds.aliyuncs.com
+    password: bYmzAYi7SCfgoSdJ
+    port: 6379
+    database: 4

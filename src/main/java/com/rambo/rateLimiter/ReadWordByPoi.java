@@ -1,4 +1,4 @@
-package com.rambo;
+package com.rambo.rateLimiter;
 
 /**
  * @author baizhanshi on 2018/9/27.

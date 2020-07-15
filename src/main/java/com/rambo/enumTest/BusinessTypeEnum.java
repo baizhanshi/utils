@@ -1,7 +1,6 @@
 
 package com.rambo.enumTest;
 
-import com.rambo.tools.BaseEnum;
 import lombok.Getter;
 
 /**
