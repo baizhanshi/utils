@@ -106,6 +106,13 @@ public class TestJava8 {
 
         System.out.println("排序：" + sortList.toString());
         System.out.println("排序：" + sortList2.toString());
+
+        //7.求集合中id最大，最小值
+        Integer maxId = appleList.stream().map(Apple::getId).distinct().max((a, b) -> a.compareTo(b)).get();
+        System.out.println("最大的id是：" + maxId);
+
+        Integer minId = appleList.stream().map(Apple::getId).distinct().min((a, b) -> a.compareTo(b)).get();
+        System.out.println("最小的id是：" + minId);
         //求交集 求并集 求差集
         List<Integer> list1 = new ArrayList<>();
         list1.add(1);
