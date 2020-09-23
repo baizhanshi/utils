@@ -1,7 +1,7 @@
 package com.rambo.redisLock;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/9 17:03
  */
 public class ThreadUtils {

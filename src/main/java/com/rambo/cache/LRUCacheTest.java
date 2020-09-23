@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/8/3 15:06
  */
 public class LRUCacheTest {

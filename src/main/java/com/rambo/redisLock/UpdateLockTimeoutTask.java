@@ -5,7 +5,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/9 16:58
  */
 public class UpdateLockTimeoutTask implements Runnable {

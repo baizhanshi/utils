@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
    interrupt方法不会出现强制中止的情况，会抛出一个异常，线程是安全的
  *
  *
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/7/16 17:50
  */
 public class TestThreadStopAndInterrupt {

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/4/8 9:56
  */
 public class ListParttition {

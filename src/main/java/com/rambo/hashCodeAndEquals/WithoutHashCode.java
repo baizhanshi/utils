@@ -3,7 +3,7 @@ package com.rambo.hashCodeAndEquals;
 import java.util.HashMap;
 
 /**
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/7/15 14:53
  */
 public class WithoutHashCode {

@@ -14,7 +14,7 @@ import org.apache.http.protocol.HttpContext;
 import java.io.IOException;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/5/14 11:35
  */
 public class LoggableHttpClient implements HttpClient {

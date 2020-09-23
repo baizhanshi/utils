@@ -3,7 +3,7 @@ package com.rambo.hashMap;
 import java.util.List;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/10 17:54
  */
 public class IteratorList {

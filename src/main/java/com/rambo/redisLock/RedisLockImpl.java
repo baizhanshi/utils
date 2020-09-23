@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * 2.设置值的时候唯一性uuid，保证锁的唯一
  * 3.threadLocal.get().equals(uuid) 保证设置的和取出来的唯一才可以释放锁，就是加锁和解锁归一
  *
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/9 16:38
  */
 @Service

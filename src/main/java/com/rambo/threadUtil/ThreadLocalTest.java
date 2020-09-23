@@ -2,7 +2,7 @@ package com.rambo.threadUtil;
 
 /**
  * InheritableThreadLocal 子线程共享主线程数据
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/8/13 15:42
  */
 public class ThreadLocalTest {

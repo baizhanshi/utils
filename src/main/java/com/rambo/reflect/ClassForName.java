@@ -1,7 +1,7 @@
 package com.rambo.reflect;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/22 14:54
  */
 public class ClassForName {

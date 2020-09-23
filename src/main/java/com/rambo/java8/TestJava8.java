@@ -157,6 +157,14 @@ public class TestJava8 {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(result);
+
+        for (int i = 0; i < 6; i++) {
+            if (i ==3) {
+                continue;
+            }
+            System.out.println(i);
+        }
+
     }
 
 }

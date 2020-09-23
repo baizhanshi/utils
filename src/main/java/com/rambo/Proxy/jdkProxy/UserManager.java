@@ -1,7 +1,7 @@
 package com.rambo.Proxy.jdkProxy;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/8 17:22
  */
 public interface UserManager {

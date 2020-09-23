@@ -3,7 +3,7 @@ package com.rambo.hashCodeAndEquals;
 import lombok.Data;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/5/20 10:49
  */
 @Data

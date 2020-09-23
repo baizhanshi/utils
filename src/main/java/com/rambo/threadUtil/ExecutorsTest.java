@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * 一个线程池中的线程异常了，那么线程池会怎么处理这个线程?答案：有时候抛出堆栈异常，有时候不是比如，submit方式没有get的时候
  * 线程池中线程抛出异常不影响其他的线程继续执行的 当线程池中一个线程异常了会被从线程池中移除的
  *
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/11 17:14
  */
 public class ExecutorsTest {

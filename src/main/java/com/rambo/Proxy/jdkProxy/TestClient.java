@@ -3,7 +3,7 @@ package com.rambo.Proxy.jdkProxy;
 /**
  * JDK 动态代理
  *
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/8 17:24
  */
 public class TestClient {

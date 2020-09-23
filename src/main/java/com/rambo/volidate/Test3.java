@@ -3,7 +3,7 @@ package com.rambo.volidate;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/9 15:49
  */
 public class Test3 {

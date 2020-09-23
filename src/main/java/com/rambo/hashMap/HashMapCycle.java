@@ -1,7 +1,7 @@
 package com.rambo.hashMap;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/5/12 14:59
  */
 import org.openjdk.jmh.annotations.*;
@@ -33,7 +33,7 @@ public class HashMapCycle {
         // 启动基准测试
         Options opt = new OptionsBuilder()
                 .include(HashMapCycle.class.getSimpleName()) // 要导入的测试类
-                .output("C:\\Users\\tpa-baizhanshi.ZAONLINE\\Desktop\\jmh-map.log") // 输出测试结果的文件
+                .output("C:\\Users\\baizhanshi.ZAONLINE\\Desktop\\jmh-map.log") // 输出测试结果的文件
                 .build();
         new Runner(opt).run(); // 执行测试
     }

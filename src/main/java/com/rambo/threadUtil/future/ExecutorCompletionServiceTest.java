@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * 当你的使用场景是不关心返回值的时候千万不要闲的蛋疼的用 CompletionService 去提交任务。
  * 因为前面说了，里面有个队列。而当你不关心返回值的时候也就是不会去处理这个队列，导致这个队列里面的对象堆积的越来越多。OOM了。
  * 
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/8/17 14:05
  */
 public class ExecutorCompletionServiceTest {

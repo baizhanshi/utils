@@ -1,7 +1,7 @@
 package com.rambo.volidate;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/1 10:40
  */
 public class Test2 {

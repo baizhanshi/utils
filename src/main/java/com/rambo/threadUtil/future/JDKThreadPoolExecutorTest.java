@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 三个异步任务，耗时最长的最先执行，所以最先进入 list，因此当在循环中获取这个任务结果的时候 get 操作会一直阻塞，即使执行时间为 5s/10s 的任务已经执行完成。（木桶原理）
- * @author ：za-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/8/17 13:52
  */
 public class JDKThreadPoolExecutorTest {

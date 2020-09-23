@@ -3,7 +3,7 @@ package com.rambo.hashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/10 18:37
  */
 public class WhyArrayList extends CopyOnWriteArrayList {

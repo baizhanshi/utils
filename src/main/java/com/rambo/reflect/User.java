@@ -1,10 +1,16 @@
 package com.rambo.reflect;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Builder;
+
 /**
- * @author ：tpa-baizhanshi
+ * @author ：baizhanshi
  * @date ：Created in 2020/6/22 11:25
  */
-public class User {
+@Builder
+@JsonIgnoreProperties(value = "handler")
+public class User{
     private String name;
     private Integer age;
 
