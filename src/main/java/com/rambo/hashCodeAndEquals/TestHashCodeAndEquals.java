@@ -28,7 +28,7 @@ public class TestHashCodeAndEquals {
         } else {
             System.out.println("s1 != s2");
         }
-//没重写hashCode 输出连个对象
+//没重写hashCode 输出两个对象
 // [Student(name=allan, sex=male, age=20, weight=60.0, addr=1111), Student(name=allan, sex=male, age=20, weight=70.0, addr=222)]
 //重写了hashCode 只会输出一个对象[Student(name=allan, sex=male, age=20, weight=60.0, addr=1111)]
         Set set = new HashSet();

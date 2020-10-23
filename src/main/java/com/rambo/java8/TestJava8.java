@@ -1,6 +1,5 @@
 package com.rambo.java8;
 
-import com.google.common.collect.Lists;
 import com.rambo.java8.inter.Student;
 
 import java.math.BigDecimal;
@@ -22,7 +21,7 @@ public class TestJava8 {
         List<Apple> appleList = new ArrayList<>();//存放apple对象集合
 
         Apple apple1 = new Apple(1, "苹果1", new BigDecimal("3.25"), 10);
-        Apple apple12 = new Apple(4, "苹果1", new BigDecimal("1.35"), 20);
+        Apple apple12 = new Apple(4, "苹果2", new BigDecimal("1.35"), 20);
         Apple apple2 = new Apple(2, "香蕉", new BigDecimal("2.89"), 30);
         Apple apple3 = new Apple(3, "荔枝", new BigDecimal("9.99"), 40);
 
@@ -45,12 +44,13 @@ public class TestJava8 {
         Stream<List<Apple>> streamList = Stream.of(appleList1, appleList2);
 
         Map<Integer, Apple> newFlatMap = streamList.flatMap(a -> a.stream())
-                .collect(Collectors.toMap(Apple::getId, apple -> apple));
+                .collect(Collectors.toMap(Apple::getId, Function.identity(), (a1, a2) -> a1));
 
         System.out.println("flatMap:" + newFlatMap.toString());
 
         //1、list转map,value 值是一个对象但是可以取其中一个对象
-        Map<Integer, String> appleMapOnly = appleList.stream().collect(Collectors.toMap(Apple::getId, Apple::getName));
+        Map<Integer, String> appleMapOnly = appleList.stream()
+                .collect(Collectors.toMap(Apple::getId, Apple::getName, (a1, a2) -> a1));
         System.out.println(appleMapOnly.toString());
 
         System.out.println("====================================");
@@ -107,12 +107,19 @@ public class TestJava8 {
         System.out.println("排序：" + sortList.toString());
         System.out.println("排序：" + sortList2.toString());
 
-        //7.求集合中id最大，最小值
+        //7.求集合中id最大，最小值(两种方式)
         Integer maxId = appleList.stream().map(Apple::getId).distinct().max((a, b) -> a.compareTo(b)).get();
         System.out.println("最大的id是：" + maxId);
-
+        Optional<Apple> max = appleList.stream().max(Comparator.comparing(apple -> apple.getId()));
+        if (max.isPresent()) {
+            System.out.println("最大的id2是：" + max.get().getId());
+        }
         Integer minId = appleList.stream().map(Apple::getId).distinct().min((a, b) -> a.compareTo(b)).get();
         System.out.println("最小的id是：" + minId);
+        Optional<Apple> min = appleList.stream().min(Comparator.comparing(apple -> apple.getId()));
+        if (min.isPresent()) {
+            System.out.println("最小的id2是：" + min.get().getId());
+        }
         //求交集 求并集 求差集
         List<Integer> list1 = new ArrayList<>();
         list1.add(1);
@@ -157,13 +164,6 @@ public class TestJava8 {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(result);
-
-        for (int i = 0; i < 6; i++) {
-            if (i ==3) {
-                continue;
-            }
-            System.out.println(i);
-        }
 
     }
 
