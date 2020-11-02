@@ -2,7 +2,7 @@ package com.rambo.designMethod.singleton;
 
 /**
  * 匿名内部类的写法 比较好
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/23 14:50
  */
 public class Singleton3 {

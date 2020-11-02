@@ -5,7 +5,7 @@ import com.rambo.designMethod.factory.IMask;
 import com.rambo.designMethod.factory.LowEndMask;
 
 /**
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/23 17:52
  */
 public class MaskFactory {

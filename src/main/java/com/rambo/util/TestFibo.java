@@ -3,7 +3,7 @@ package com.rambo.util;
 /**
  * 斐波那契数列 后面一个数等于前边两个数的和
  * 
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/21 9:54
  */
 public class TestFibo {

@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 /**
  * 抽象化List
  * 
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/20 10:14
  */
 public class FilterUtils {

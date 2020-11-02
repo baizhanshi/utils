@@ -4,7 +4,7 @@ import com.rambo.designMethod.factory.HighEndMask;
 import com.rambo.designMethod.factory.IMask;
 
 /**
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/23 18:18
  */
 public class HighEndFactory implements IFactory {

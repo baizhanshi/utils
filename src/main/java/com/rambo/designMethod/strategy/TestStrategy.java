@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 行为参数化类似于策略模式
  * 
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/20 10:18
  */
 public class TestStrategy {

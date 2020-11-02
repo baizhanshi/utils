@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Arrays.asList(strArray)方式仅能用在将数组转换为List后，不需要增删其中的值，仅作为数据源读取使用。
- * @author ：za-baizhanshi
+ * @author ：baizhansi
  * @date ：Created in 2020/10/22 9:55
  */
 public class TestArrayList {
