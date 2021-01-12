@@ -26,13 +26,13 @@ public class TestCompletableFuture {
             }
             System.out.println("run end ...");
         });
-        future1.get();
+        System.out.println("无返回值：" + future1.get());
 
         //有返回值supplyAsync
         CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
             return "hello world";
         });
-        System.out.println(future.get()); //阻塞的获取结果  ''helllo world"
+        System.out.println("有返回值：" + future.get()); //阻塞的获取结果  ''helllo world"
 
         //whenComplete
         CompletableFuture<Void> future2 = CompletableFuture.runAsync(() -> {
@@ -40,9 +40,9 @@ public class TestCompletableFuture {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
             }
-            if (new Random().nextInt() % 2 >= 0) {
-                int i = 12 / 0;
-            }
+//            if (new Random().nextInt() % 2 >= 0) {
+//                int i = 12 / 0;
+//            }
             System.out.println("run end ...");
         });
 

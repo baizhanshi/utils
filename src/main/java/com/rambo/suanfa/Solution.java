@@ -1,9 +1,10 @@
-package com.rambo.util;
+package com.rambo.suanfa;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 输出两个数之和等于目标对象的索引位置
  * @author ：baizhanshi
  * @date ：Created in 2020/7/8 16:42
  */

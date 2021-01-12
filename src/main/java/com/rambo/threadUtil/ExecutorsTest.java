@@ -2,7 +2,6 @@ package com.rambo.threadUtil;
 
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-import javax.annotation.PostConstruct;
 import java.util.concurrent.*;
 
 /**
@@ -24,7 +23,7 @@ public class ExecutorsTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Executors.newFixedThreadPool(3);
+        Executors.newCachedThreadPool();
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10, 100, 1, TimeUnit.SECONDS,
                 new LinkedBlockingQueue<Runnable>(50));
     }

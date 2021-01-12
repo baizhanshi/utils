@@ -17,5 +17,9 @@ public class ListParttition {
         ListUtils.partition(list,4).forEach(aa-> {
             System.out.println(aa);
         });
+
+        List<Integer> transform = Lists.transform(list, a -> a + 1);
+        System.out.println(transform.toString());
     }
+
 }

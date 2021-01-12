@@ -1,4 +1,4 @@
-package com.rambo.util;
+package com.rambo.suanfa;
 
 /**
  * 斐波那契数列 后面一个数等于前边两个数的和
