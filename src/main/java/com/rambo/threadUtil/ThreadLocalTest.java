@@ -14,13 +14,9 @@ public class ThreadLocalTest {
         //在main线程中添加main线程的本地变量
         threadLocal.set("mainVal");
         //新创建一个子线程
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("子线程中的本地变量值:" + threadLocal.get());
-            }
-        });
-        thread.start();
+        new Thread(()->{
+            System.out.println("子线程中的本地变量值:" + threadLocal.get());
+        }).start();
         //输出main线程中的本地变量值
         System.out.println("mainx线程中的本地变量值:" + threadLocal.get());
     }

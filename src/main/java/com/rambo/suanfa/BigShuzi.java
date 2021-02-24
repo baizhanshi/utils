@@ -12,8 +12,9 @@ public class BigShuzi {
         ints[ints.length - 1] = 8;
         ints[ints.length - 2] = 7;
         ints[ints.length - 3] = 1;
+        ints[ints.length - 4] = 1;
 
-        int num = 12;
+        int num = 123896;
         //计算每一位
         for (int i = 0; i < ints.length; i++) {
             ints[i] *= num;

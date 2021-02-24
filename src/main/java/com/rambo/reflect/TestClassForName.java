@@ -17,17 +17,3 @@ public class TestClassForName {
         System.out.println("#########-------------ClassLoader结束符------------##########");//没有初始化数据
     }
 }
-
-class Singleton {
-    //初始化构造防止被实例化
-    private Singleton() {
-    }
-
-    private static class singletonFactory {
-        private static Singleton instance = new Singleton();
-    }
-
-    public static Singleton getInstance(){
-        return singletonFactory.instance;
-    }
-}
