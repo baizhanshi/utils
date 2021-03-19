@@ -1,6 +1,6 @@
 package com.rambo;
 
-import java.io.IOException;
+import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
@@ -9,15 +9,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.bind.annotation.RestController;
-import lombok.extern.slf4j.Slf4j;
+
+import java.io.IOException;
 
 @RestController
 @SpringBootApplication
 @Configuration
 @Slf4j
 @ComponentScan(value = "com.rambo")
+@EnableAspectJAutoProxy
 public class Application {
 
     public static void main(String[] args) {
