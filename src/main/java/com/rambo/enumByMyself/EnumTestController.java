@@ -16,7 +16,7 @@ import java.util.HashMap;
 @Slf4j
 @RestController
 @RequestMapping(value = "/enum")
-public class EnumTestontroller {
+public class EnumTestController {
 
     @LogApi
     @RequestMapping(value = "/get/{id}/{sex}", method = RequestMethod.GET)
