@@ -9,15 +9,22 @@ package com.rambo.suanfa;
  # 以上找规律， f(n) = f(n-1) + f(n-2)
  * @author ：baizhanshi
  * @date ：Created in 2021/5/23 15:38
+ *
+ * 动态规划思想
  */
 public class TestPaLouti {
 
     public static void main(String[] args) {
+        long start  =System.currentTimeMillis();
         System.out.println(climbStairs(10));
+        System.out.println(System.currentTimeMillis()-start);
+        long start1  =System.currentTimeMillis();
         System.out.println(getFibo(10));
+        System.out.println(System.currentTimeMillis()-start1);
     }
 
-    public static int climbStairs(int n) {
+    //时间复杂度O（1）
+    public static long climbStairs(int n) {
         if(n<=2){
             return n;
         }
@@ -30,8 +37,8 @@ public class TestPaLouti {
         }
         return i2;
     }
-
-    private static int getFibo(int i) {
+    //时间复杂度O（n）
+    private static long getFibo(int i) {
         if (i == 1 || i == 2) {
             return i;
         } else {
