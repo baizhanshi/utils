@@ -3,13 +3,14 @@ package com.rambo.reflect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Builder;
+import lombok.Data;
 
 /**
  * @author ：baizhanshi
  * @date ：Created in 2020/6/22 11:25
  */
 @Builder
-@JsonIgnoreProperties(value = "handler")
+@Data
 public class User{
     private String name;
     private Integer age;
