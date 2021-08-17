@@ -4,6 +4,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
+ * 一致性hash算法举例
  * @author ：baizhanshi
  * @date ：Created in 2021/8/17 19:06
  */
