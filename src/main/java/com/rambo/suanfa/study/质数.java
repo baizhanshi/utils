@@ -1,4 +1,4 @@
-package com.rambo.suanfa;
+package com.rambo.suanfa.study;
 
 /**
  * 质数获取逻辑

@@ -1,5 +1,7 @@
 package com.rambo.suanfa;
 
+import com.rambo.suanfa.Node;
+
 /**
  * 链表反转
  * 1->2->3->4->5->6->7
