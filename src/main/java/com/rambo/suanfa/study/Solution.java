@@ -25,7 +25,7 @@ public class Solution {
     }
 
     /**
-     * 暴力解法
+     * 暴力解法O（N*N）
      *
      * @param nums
      * @param target
@@ -43,7 +43,7 @@ public class Solution {
     }
 
     /**
-     * 暂存法
+     * 暂存法 O(n)
      *
      * @param nums
      * @param target
