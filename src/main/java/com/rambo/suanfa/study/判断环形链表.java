@@ -1,4 +1,5 @@
-package com.rambo.suanfa;
+package com.rambo.suanfa.study;
+
 
 import java.util.HashSet;
 import java.util.Set;
@@ -28,19 +29,19 @@ public class 判断环形链表 {
 
     /**
      * HashSet 暂存法
-     * @param node
+     *
+     * @param head
      * @return
      */
-    private static boolean isCycleMap(Node node) {
-        Set<Node> cacheSet = new HashSet<>();
-        while (!cacheSet.contains(node)) {
-            if (node == null) {
-                return false;
+    private static boolean isCycleMap(Node head) {
+        Set<Node> set = new HashSet<>();
+        while (head != null) {
+            if (!set.add(head)) {
+                return true;
             }
-            cacheSet.add(node);
-            node = node.next;
+            head = head.next;
         }
-        return true;
+        return false;
     }
 
 
