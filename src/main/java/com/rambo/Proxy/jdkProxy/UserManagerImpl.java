@@ -7,6 +7,6 @@ package com.rambo.Proxy.jdkProxy;
 public class UserManagerImpl implements UserManager {
     @Override
     public void addUser(String userId, String userName) {
-        System.out.println(userId + "-----proxy add user test-----" + userName);
+        System.out.println(userId + "-----proxy add user test123-----" + userName);
     }
 }

@@ -25,7 +25,7 @@ public class Application {
 
     public static void main(String[] args) {
         log.info("==================Application start .......======================");
-        System.setProperty("DEPLOY_ENV", "test");
+        System.setProperty("DEPLOY_ENV", "test123");
         SpringApplication.run(Application.class, args);
         log.info("==================Application start success======================");
     }

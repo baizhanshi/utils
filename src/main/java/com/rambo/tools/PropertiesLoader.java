@@ -131,15 +131,15 @@ public class PropertiesLoader {
     }
 
     public static void main(String[] args) {
-        PropertiesLoader propertiesLoader = new PropertiesLoader("test.properties");
+        PropertiesLoader propertiesLoader = new PropertiesLoader("test123.properties");
 
-        System.out.println(propertiesLoader.getProperty("string.test"));
+        System.out.println(propertiesLoader.getProperty("string.test123"));
         System.out.println(propertiesLoader.getProperty("string.test1", "AAAAAAAAAAA"));
-        System.out.println(propertiesLoader.getInteger("int.test"));
+        System.out.println(propertiesLoader.getInteger("int.test123"));
         System.out.println(propertiesLoader.getInteger("int.test1", 2048));
-        System.out.println(propertiesLoader.getDouble("double.test"));
+        System.out.println(propertiesLoader.getDouble("double.test123"));
         System.out.println(propertiesLoader.getDouble("double.test1", 2048));
-        System.out.println(propertiesLoader.getBoolean("boolean.test"));
+        System.out.println(propertiesLoader.getBoolean("boolean.test123"));
         System.out.println(propertiesLoader.getBoolean("boolean.test1", Boolean.FALSE));
     }
 }

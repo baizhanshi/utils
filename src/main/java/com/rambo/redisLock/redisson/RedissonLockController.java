@@ -39,7 +39,7 @@ public class RedissonLockController {
      * 
      * @return
      */
-    @GetMapping("/test")
+    @GetMapping("/test123")
     public void lock() {
         // 计数器
         final CountDownLatch countDownLatch = new CountDownLatch(1);
@@ -56,7 +56,7 @@ public class RedissonLockController {
      * 加锁测试
      */
     private void testLockCount() {
-        String lockKey = "lock-test";
+        String lockKey = "lock-test123";
         try {
             // 加锁，设置超时时间2s
             RedisLockUtil.lock(lockKey, 20, TimeUnit.SECONDS);

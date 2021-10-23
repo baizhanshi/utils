@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringEscapeUtils;
 
 public class TestEscape {
     public static void main(String[] args) {
-        String str = "thi is a test 这是一个测试";
+        String str = "thi is a test123 这是一个测试";
         String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                 "<persons>\n" +
                 "   <person id=\"23\">\n" +
