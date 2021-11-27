@@ -1,7 +1,7 @@
 package com.rambo.tools;
 
 
-import com.rambo.exceptions.ClassInstantiationException;
+import com.rambo.exceptions.BizException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -151,9 +151,9 @@ public class ClassLoaderUtil {
      * param className 要实例化的类名
      * return 指定类名的实例
      * throws ClassNotFoundException      如果类没找到
-     * throws ClassInstantiationException 如果实例化失败
+     * throws BizException 如果实例化失败
      */
-    public static Object newInstance(String className) throws ClassNotFoundException, ClassInstantiationException {
+    public static Object newInstance(String className) throws ClassNotFoundException, BizException {
         return newInstance(loadClass(className));
     }
 
@@ -165,10 +165,10 @@ public class ClassLoaderUtil {
      *                  所在的class loader装载
      * return 指定类名的实例
      * throws ClassNotFoundException      如果类没找到
-     * throws ClassInstantiationException 如果实例化失败
+     * throws BizException 如果实例化失败
      */
     public static Object newInstance(String className, Class<?> referrer) throws ClassNotFoundException,
-            ClassInstantiationException {
+            BizException {
         return newInstance(loadClass(className, referrer));
     }
 
@@ -181,10 +181,10 @@ public class ClassLoaderUtil {
      *                    ，表示从<code>ClassLoaderUtil</code>所在的class loader中装载
      * return 指定类名的实例
      * throws ClassNotFoundException      如果类没找到
-     * throws ClassInstantiationException 如果实例化失败
+     * throws BizException 如果实例化失败
      */
     public static Object newInstance(String className, ClassLoader classLoader) throws ClassNotFoundException,
-            com.rambo.exceptions.ClassInstantiationException {
+            BizException {
         return newInstance(loadClass(className, classLoader));
     }
 
@@ -193,9 +193,9 @@ public class ClassLoaderUtil {
      *
      * param clazz 要创建实例的类
      * return 指定类的实例
-     * throws ClassInstantiationException 如果实例化失败
+     * throws BizException 如果实例化失败
      */
-    private static Object newInstance(Class<?> clazz) throws ClassInstantiationException {
+    private static Object newInstance(Class<?> clazz) throws BizException {
 
         if (clazz == null) {
             return null;
@@ -204,11 +204,11 @@ public class ClassLoaderUtil {
         try {
             return clazz.newInstance();
         } catch (InstantiationException e) {
-            throw new ClassInstantiationException("Failed to instantiate class: " + clazz.getName(), e);
+            throw new BizException("Failed to instantiate class: " + clazz.getName(), e);
         } catch (IllegalAccessException e) {
-            throw new ClassInstantiationException("Failed to instantiate class: " + clazz.getName(), e);
+            throw new BizException("Failed to instantiate class: " + clazz.getName(), e);
         } catch (Exception e) {
-            throw new ClassInstantiationException("Failed to instantiate class: " + clazz.getName(), e);
+            throw new BizException("Failed to instantiate class: " + clazz.getName(), e);
         }
     }
 
