@@ -5,8 +5,8 @@ package com.rambo.suanfa;
  * @date ：Created in 2021/7/7 16:23
  */
 public class Node {
-    int  index;
-    Node next;
+    private int index;
+    private Node next;
 
     public Node(int index, Node next) {
         this.index = index;

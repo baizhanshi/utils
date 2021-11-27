@@ -1,6 +1,7 @@
-package com.rambo.suanfa;
+package com.rambo.suanfa.study;
 
-import com.rambo.suanfa.Node;
+
+import java.util.Stack;
 
 /**
  * 链表反转
@@ -70,5 +71,34 @@ public class 链表翻转 {
         }
     }
 
+    /**
+     * 入栈，出栈实现翻转
+     *
+     * @param node
+     * @return
+     */
+    public static Node reverseStackList(Node node) {
+        if (node == null || node.next == null) {
+            return node;
+        }
+        //全部入栈
+        Stack<Node> stack = new Stack<>();
+        stack.push(node);
+        while (node.next != null) {
+            stack.push(node.next);
+            node = node.next;
+        }
+        //出栈
+        //创建一个新的出栈以后的链表
+        Node listNode = stack.pop();
+        Node reverseNode = listNode;
+        while (!stack.isEmpty()) {
+            Node item = stack.pop();
+            reverseNode.next = item;
+            reverseNode = item;
+        }
+        reverseNode.next = null;
+        return listNode;
+    }
 }
 
